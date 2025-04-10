@@ -34,4 +34,10 @@ document.getElementById("searchBox").addEventListener("input", function () {
     item.style.display = item.textContent.toLowerCase().includes(filter) ? "" : "none";
   });
 });
+document.getElementById("searchBox").addEventListener("input", function () {
+  const filter = this.value.toLowerCase();
+  document.querySelectorAll("#postList li").forEach(item => {
+    item.style.display = item.textContent.toLowerCase().includes(filter) ? "" : "none";
+  });
+});
 
