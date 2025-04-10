@@ -28,4 +28,10 @@ window.addEventListener('DOMContentLoaded', function () {
     document.body.classList.add('dark-mode');
   }
 });
+document.getElementById("searchBox").addEventListener("input", function () {
+  const filter = this.value.toLowerCase();
+  document.querySelectorAll("#postList li").forEach(item => {
+    item.style.display = item.textContent.toLowerCase().includes(filter) ? "" : "none";
+  });
+});
 
