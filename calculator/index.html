@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <meta charset="UTF-8">
-  <title>计算器</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMI 计算器</title>
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-  <header>
-    <h1>计算器</h1>
-    <nav>
-      <a href="../index.html">主页</a>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <input type="number" id="a" placeholder="数字1">
-      <input type="number" id="b" placeholder="数字2">
-      <button onclick="calc()">加法</button>
-      <p id="result"></p>
-    </section>
-  </main>
-  <script>
-    function calc() {
-      const a = parseFloat(document.getElementById('a').value);
-      const b = parseFloat(document.getElementById('b').value);
-      document.getElementById('result').innerText = "结果：" + (a + b);
-    }
-  </script>
+  <nav>
+    <h1>MySite</h1>
+    <ul>
+      <li><a href="../index.html">主页</a></li>
+      <li><a href="../articles/index.html">文章</a></li>
+      <li><a href="../resources/index.html">资源</a></li>
+      <li><a href="index.html">计算器</a></li>
+      <li><a href="../tools/index.html">工具</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <header>
+      <h2>BMI 计算器</h2>
+      <p>输入身高和体重计算身体质量指数。</p>
+    </header>
+
+    <form oninput="bmi.value=(weight.value / ((height.value/100)**2)).toFixed(2)">
+      <label>身高（cm）：<input type="number" id="height" value="170"></label><br><br>
+      <label>体重（kg）：<input type="number" id="weight" value="65"></label><br><br>
+      <label>BMI：<output name="bmi" for="height weight">22.49</output></label>
+    </form>
+  </div>
+
+  <footer>
+    © 2025 MySite. All rights reserved.
+  </footer>
 </body>
 </html>
