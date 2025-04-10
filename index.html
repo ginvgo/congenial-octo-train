@@ -1,26 +1,44 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>我的现代网站</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <h1>我的现代网站</h1>
-    <nav>
-      <a href="index.html">主页</a>
-      <a href="articles/index.html">文章</a>
-      <a href="resources/index.html">资源</a>
-      <a href="calculator/index.html">计算器</a>
-      <a href="tools/index.html">工具</a>
-    </nav>
-  </header>
-  <main>
+  <nav>
+    <h1>MySite</h1>
+    <ul>
+      <li><a href="index.html">主页</a></li>
+      <li><a href="articles/index.html">文章</a></li>
+      <li><a href="resources/index.html">资源</a></li>
+      <li><a href="calculator/index.html">计算器</a></li>
+      <li><a href="tools/index.html">工具</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <header>
+      <h2>欢迎来到我的网站 👋</h2>
+      <p>这是一个拥有现代设计风格的静态网站，包含文章、资源、工具等栏目。</p>
+    </header>
+
     <section>
-      <h2>欢迎 👋</h2>
-      <p>这是一个简单现代的网站，基于 GitHub Pages 自动发布。</p>
+      <h3>快速入口</h3>
+      <ul>
+        <li><a href="articles/index.html">查看最新文章</a></li>
+        <li><a href="resources/index.html">下载文档资源</a></li>
+        <li><a href="calculator/index.html">使用在线计算器</a></li>
+        <li><a href="tools/index.html">浏览更多实用工具</a></li>
+      </ul>
     </section>
-  </main>
+  </div>
+
+  <footer>
+    © 2025 MySite. All rights reserved.
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
