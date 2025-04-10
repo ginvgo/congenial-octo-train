@@ -16,3 +16,16 @@ function highlightActiveLink() {
     }
   });
 }
+// 夜间模式切换
+document.getElementById('toggleDarkMode').addEventListener('click', function () {
+  document.body.classList.toggle('dark-mode');
+  localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+});
+
+// 页面加载时读取用户偏好
+window.addEventListener('DOMContentLoaded', function () {
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-mode');
+  }
+});
+
