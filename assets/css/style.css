@@ -122,4 +122,31 @@ footer {
   height: 64px;
   margin-bottom: 1rem;
 }
+.sidebar {
+  background: #ffffff;
+  border-radius: 0 30px 30px 0;
+  padding: 20px 10px;
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+.sidebar img.logo {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 30px;
+}
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+body.dark-mode nav,
+body.dark-mode .sidebar {
+  background-color: #1e1e1e;
+}
+body.dark-mode a {
+  color: #90caf9;
+}
 
